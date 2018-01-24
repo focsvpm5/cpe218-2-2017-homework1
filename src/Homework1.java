@@ -1,10 +1,10 @@
 import java.util.Stack;
 public class Homework1 {
 	public static Stack st = new Stack();
+	static Node tree = null;
 	public static void main(String[] args) {
 
 		// Begin of arguments input sample
-		node tree = null;
 		if (args.length > 0) {
 			String input = args[0];
 			for (int i = 0; i < input.length(); i++) {
@@ -16,6 +16,7 @@ public class Homework1 {
 			String out = inorder(tree);
 			System.out.println(out.substring(1, out.length() - 1) + "=" + calculate(tree));
 		}
+		TreeIconDemo2.main(tree);
 		// End of arguments input sample
 
 		// TODO: Implement your project here
@@ -48,5 +49,5 @@ public class Homework1 {
 		if (root.rt != null) {x += inorder(root.rt) + ")";}
 		return x;
 	}
-
+ 
 }

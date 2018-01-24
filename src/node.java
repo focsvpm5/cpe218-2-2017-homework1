@@ -10,4 +10,7 @@ public class node {
         lt=l;
         node=a;
     }
+    public String toString(){
+        return node;
+    }
 }
